@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bill Horst Software Engineer</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src='js/work.js'></script>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Custom styles -->
+  <link rel='stylesheet' href='css/styles.css'>
+  <link rel='stylesheet' href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy='scroll' data-target='.navbar'>
+  <nav class='navbar navbar-inverse navbar-fixed-top'>
+    <div class='container-fluid'>
+      <div class='navbar-header'>
+        <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <div class='project-name navbar-brand'>
+          <a href='#parallax-intro' id='brand'>Bill Horst</a>
+        </div><!-- end of project name -->
+      </div><!-- end of navbar-header -->
+      <div class='navbar-collapse collapse'>
+        <ul class='nav navbar-nav navbar-right'>
+          <li><a href='#about-section'>About</a></li>
+          <li><a href='#portfolio-section'>Work</a></li>
+          <li><a href='#certification-section'>Certifications</a></li>
+          <li><a href='#contact-section'>Contact</a></li>
+          <li>
+            <a class='resume-button' data-toggle='modal' data-target='.bs-example-modal-sm'>Resume</a>
+          </li>
+        </ul>
+      </div><!-- end of navbar-collapse -->
+    </div><!-- end of nav container -->
+  </nav><!-- end of navbar -->
+
+
+  <!-- Parallax Section -->
+  <div id='parallax-intro'>
+    <h1 class='name-header' data-stellar-ratio='.3'>
+      Bill Horst, Web Developer
+      <div class='header-social-media-links'>
+        <span class='links'>
+          <a href='https://github.com/Bill-Horst'><i class='fa fa-github' data-toggle='tooltip' data-placement='top' title='Github'></i></a>
+          <a href='https://www.linkedin.com/in/horstbill'><i class='fa fa-linkedin-square' data-toggle='tooltip' data-placement='top' title='LinkedIn'></i></a>
+          <a class='resume-button' data-toggle='modal' data-target='.bs-example-modal-sm'><i class='fa fa-list-alt' data-toggle='tooltip' data-placement='top' title='Resume'></i></a>
+        </span>
+      </div>
+    </h1>
+    <div class='fuji-pic'>
+      <div class='parallax-pics fuji-top-parallax-pic' data-stellar-ratio='0.1'></div>
+      <div class='parallax-pics mid-2-parallax-pic' data-stellar-ratio='.3'></div>
+      <div class='parallax-pics mid-1-parallax-pic' data-stellar-ratio='.4'></div>
+      <div class='parallax-pics bottom-2-parallax-pic' data-stellar-ratio='.7'></div>
+      <div class='parallax-pics bottom-1-parallax-pic' data-stellar-ratio='1'></div>
+    </div>
+  </div>
+  <!-- END of parallax section -->
+
+
+  <!-- About Section -->
+  <div class='anchor' id='about-section'>
+    <div class='container'>
+
+      <div class='header'>
+        <h1 class='about-header'>About Me</h1>
+      </div>
+
+      <div class='row'>
+
+        <div class='image column col-sm-6 col-md-4 col-lg-2'>
+          <img class='img-responsive' src='img/bill.jpg' alt='picture of Bill Horst'>
+        </div>
+
+        <div class='skills column col-sm-6 col-md-4 col-lg-5'>
+          <h3>Skills</h3>
+          <hr />
+          <p><i class='fa fa-bolt dark-red'></i>HTML and CSS</p>
+          <p><i class='fa fa-bolt dark-red'></i>JavaScript</p>
+          <p><i class='fa fa-bolt dark-red'></i>AngularJS</p>
+          <p><i class='fa fa-bolt dark-red'></i>Java / Spring MVC REST APIs</p>
+          <p><i class='fa fa-bolt dark-red'></i>Ruby / Rails</p>
+          <p><i class='fa fa-bolt dark-red'></i>Agile / Scrum</p>
+        </div>
+
+        <div class='intro column col-sm-12 col-md-4 col-lg-5'>
+          <h3>Short Intro</h3>
+          <hr />
+          <p>I am a software developer in Fort Collins, Colorado. I have three years of full-stack enterprise development experience in healthcare and entertainment. I also have four years of Japanese to English translation experience living in Japan. I am a lifelong learner and always looking for opportunities to learn something new.</p>
+        </div>
+
+      </div>
+
+    </div><!-- end container -->
+  </div>
+  <!-- END About Section -->
+
+
+  <!-- Top break section -->
+  <div class='break-section break-1 break-body left-cone'>
+    <!-- inserted from parallax_adjustments.js -->
+  </div>
+  <!-- END Top break section -->
+
+
+  <!-- Portfolio Work -->
+  <div id='portfolio-section'>
+    <div class='container anchor'>
+      <div class='header'>
+        <h1>Portfolio</h1>
+        <br />
+        <div id='work'>
+          <!-- all portfolio pieces from "work.js" -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Portfolio Work -->
+
+
+  <!-- Certifications Section -->
+  <div id='certification-section'>
+    <div class='container anchor'>
+      <div class='header'>
+        <h1>Certifications</h1>
+        <br />
+      </div>
+      <div class='row'>
+        <div class='col-xs-12 col-md-4'><a href='https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-808'><img class='img-responsive cert-badge' src='img/certifications/Java_8_Cert.gif' id='java-cert-badge' alt='Java Badge'></a></div>
+        <div class='col-xs-12 col-md-4'><a href='https://aws.amazon.com/certification/certified-developer-associate/'><img class='img-responsive cert-badge' src='img/certifications/AWS_Cert.png' id='aws-cert-badge' alt='AWS Badge'></a></div>
+        <div class='col-xs-12 col-md-4'><a href='https://www.microsoft.com/en-us/learning/exam-70-480.aspx'><img class='img-responsive cert-badge' src='img/certifications/MS_70-480_Cert.png' id='ms-cert-badge' alt='Microsoft Badge'></a></div>
+      </div>
+    </div>
+  </div>
+  <!-- END Certifications Section -->
+
+
+  <!-- Bottom Break Section -->
+  <div class='break-section break-2 break-body right-cone'>
+    <!-- inserted from parallax_adjustments.js -->
+  </div>
+  <!-- END Bottom Break Section -->
+
+
+  <!-- Contact Section -->
+  <div class='container-fluid anchor' id='contact-section'>
+    <div id='contact-body'>
+      <div class='info container'>
+        <div class='header'>
+          <h1>Contact</h1>
+        </div>
+        <div class='row'>
+          <div class='text-center contact-info'>
+            <div class='contact-email'>
+              <span class='fa fa-envelope fa-2x'></span>
+              <p>bill@billhorst.com</p>
+            </div>
+            <div class='address'>
+              <span class='fa fa-id-card fa-2x'></span>
+              <p>Fort Collins, Colorado, USA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Contact Section -->
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class='container'>
+      <div class='row footer-row'>
+        <div class='social-media-links'>
+          <div class='links'>
+            <a href='https://github.com/Bill-Horst'><i class='fa fa-github fa-3x' data-toggle='tooltip' data-placement='top' title='Github'></i></a>
+            <a href='https://www.linkedin.com/in/horstbill'><i class='fa fa-linkedin-square fa-3x' data-toggle='tooltip' data-placement='top' title='LinkedIn'></i></a>
+            <a class='resume-button' data-toggle='modal' data-target='.bs-example-modal-sm'><i class='fa fa-list-alt fa-3x' data-toggle='tooltip' data-placement='top' title='Resume'></i></a>
+          </div>
+        </div>
+        <div class='copyright-info'>
+          <span>&copy; Bill Horst 2018</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END Footer Section -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src='js/jquery-migrate-3.0.0.min.js'></script>
+  <script src='js/jquery.stellar.min.js'></script>
+  <script src='js/parallax_adjustments.js'></script>
+  <script src='js/smooth_scrolling.js'></script>
+  <script src='js/stellar.js'></script>
+  <script src='js/scripts.js'></script>
+
+  <!-- RESUME MODAL -->
+  <div class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-hidden='true' data-backdrop='static' data-keyboard='false'>
+    <div class='modal-dialog modal-lg'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+          <h4 class='modal-title' id='myModalLabel'>Resume</h4>
+        </div>
+        <div class='modal-body'>
+          <embed id='resume-embed' src='Resume.pdf' />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END RESUME MODAL -->
+</body>
+</html>

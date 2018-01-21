@@ -1,0 +1,453 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #004d00;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url('../img/background.jpg');
+}
+
+
+
+/* NAVIGATION BAR */
+.navbar {
+  padding: 0px 20px;
+}
+
+.project-name {
+  text-transform: uppercase;
+}
+
+.project-name a {
+  color: white;
+}
+
+.navbar a {
+  cursor: pointer;
+}
+
+#resume-embed {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+/* END NAVIGATION BAR */
+
+
+/* PARALLAX JUMBOTRON */
+#parallax-intro {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.name-header {
+  color: #f2e7ac;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+  background-color: #4f7d5e;
+  width: 100%;
+  font-size: 4em;
+  text-align: center;
+  opacity: .8;
+  transition: 0ms;
+}
+
+@media screen and (max-width: 975px){
+  .name-header {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .name-header {
+    font-size: 2.3em;
+  }
+}
+
+.header-social-media-links {
+  text-align: center;
+}
+
+.fuji-pic {
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.parallax-pics {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1100px;
+  top: 50px; /* offsets the 50px navigation bar */
+  margin-bottom: 50px; /* offsets the 'top: 50px' from above */
+}
+
+.fuji-top-parallax-pic {
+  background-image: url('../img/parallax/fuji_top.jpg');
+}
+
+.mid-2-parallax-pic {
+  background-image: url('../img/parallax/mid_2.gif');
+}
+
+.mid-1-parallax-pic {
+  background-image: url('../img/parallax/mid_1.gif');
+}
+
+.bottom-2-parallax-pic {
+  background-image: url('../img/parallax/bottom_2.gif');
+}
+
+.bottom-1-parallax-pic {
+  background-image: url('../img/parallax/bottom_1.gif');
+}
+
+.medium-screen-pic {
+  background-position: -200px 0px;
+  margin-right: -200px;
+}
+
+.small-screen-pic {
+  background-position: -350px 0px;
+  margin-right: -350px;
+}
+/* END PARALLAX JUMBOTRON */
+
+
+/* ABOUT */
+.about-header {
+  margin-bottom: 0px !important;
+}
+
+.skills {
+  height: 100%;
+}
+
+.skills > p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.13em;
+  line-height: 1.7;
+  text-align: justify;
+}
+.intro p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.13em;
+  line-height: 1.7;
+  -webkit-margin-before: 0;
+}
+
+.column i {
+  font-size: 1.2em;
+  letter-spacing: 10px;
+}
+
+.intro h2, h3 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.column {
+  margin-top: 50px;
+}
+
+.skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-text {
+  padding-top: 60px;
+  clear: both;
+}
+
+.image img {
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  filter: grayscale(50%) invert(20%) contrast(200%);
+}
+
+@media screen and (max-width: 1100px){
+  .image img {
+    margin: auto;
+  }
+}
+
+#about-section h3 {
+  text-align: center;
+}
+/* END ABOUT */
+
+
+/* PORTFOLIO WORK */
+#portfolio-section .panel {
+  border: 0px;
+}
+#portfolio-section .panel, #portfolio-section .panel-heading {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: #ffffd9;
+}
+
+#portfolio-section .panel-heading {
+  color: #fff0b3;
+  background-color: #600;
+}
+
+#portfolio-section .row {
+  margin-bottom: -20px;
+}
+
+.portfolio-piece-picture {
+  position: relative;
+  filter: grayscale(40%);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.left-project-pic {
+  border-bottom-left-radius: 30px;
+}
+
+.right-project-pic {
+  border-bottom-right-radius: 30px;
+}
+
+@media screen and (max-width: 991px){
+  .left-project-pic {
+    border-bottom-left-radius: 0px;
+  }
+  .right-project-pic {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+}
+
+.background-dark {
+  background-color: #600;
+}
+
+.opacity-down {
+  opacity: .2;
+}
+
+.no-extra {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#portfolio-section img.img-responsive {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.site-invitation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+  width:50%;
+  height: 60%;
+  color: white;
+}
+
+.portfolio-piece-picture, img, h1 {
+  transition: 500ms;
+}
+/* END PORTFOLIO WORK */
+
+
+/* CERTIFICATIONS */
+#certification-section {
+  padding-bottom: 50px;
+}
+
+.cert-badge {
+  height: 100px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
+/* END CERTIFICATIONS */
+
+
+/* CONTACT */
+#contact-body {
+  padding-bottom: 50px;
+}
+
+#contact-body .contact-info p {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1230px){
+  #contact-body .contact-info p {
+    font-size: 1.3em;
+  }
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.info > h1 {
+  padding-top: 70px;
+}
+
+#contact-section {
+  padding-bottom: 100px;
+}
+/* END CONTACT */
+
+
+/* FOOTER */
+footer {
+  background-color: #600;
+  margin-top: -50px;
+  min-height: 50px;
+  border-top: solid black 1px;
+}
+
+.footer-row {
+  padding-top: 30px;
+}
+
+.social-media-links {
+  text-align: right;
+}
+
+@media screen and (max-width: 550px){
+  .social-media-links {
+    padding: 0px;
+  }
+}
+
+.links > a {
+  padding-left: 30px;
+}
+
+.links i {
+  color: #fff5cc;
+}
+
+.links i:hover {
+  color: #fff0b3;
+}
+
+.links i:active {
+  color: white;
+}
+
+.copyright-info {
+  color: #fff5ce;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-row {
+  padding-bottom: 10px;
+}
+/* END FOOTER */
+
+
+/* BREAK SECTIONS */
+.break-section {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: relative;
+}
+
+.break-body {
+  height: 350px;
+  background-repeat: no-repeat;
+}
+
+.left-cone {
+  -webkit-clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/fuji.jpg');
+}
+
+.right-cone {
+  -webkit-clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 75%);
+  clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0 75%);
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/fuji.jpg');
+  background-position: center bottom;
+}
+/* END BREAK SECTIONS */
+
+
+/* TOPOGRAPHY */
+.header h1 {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+h1,
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+p,
+a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+  border-color: #600;
+}
+
+.dark-red {
+  color: #600;
+}
+/* END TOPOGRAPHY */
+
+
+/* ANCHOR */
+.anchor {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* END ANCHOR */
+
+
+/* BOOTSTRAP CSS OVERRIDE */
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* END BOOTSTRAP CSS OVERRIDE */
