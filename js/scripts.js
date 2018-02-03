@@ -57,4 +57,9 @@ $(document).ready(function() {
   // END ACTIVATE TOOLTIPS
 
 
+  // GET CURRENT YEAR
+  $('#current-year').html(new Date().getFullYear());
+  // END GET CURRENT YEAR
+
+
 });
