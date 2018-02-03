@@ -153,7 +153,6 @@ body {
 .intro h2, h3 {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
 }
 
 .container {
@@ -198,6 +197,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px){
+  .image img {
+    max-width: 300px;
+  }
+}
+
 #about-section h3 {
   text-align: center;
 }
@@ -223,6 +228,15 @@ body {
   margin-bottom: -20px;
 }
 
+.panel-heading {
+  font-weight: 400;
+  text-transform:inherit;
+}
+
+.panel-body {
+  font-weight: 600;
+}
+
 .portfolio-piece-picture {
   position: relative;
   filter: grayscale(40%);
@@ -239,6 +253,10 @@ body {
 }
 
 @media screen and (max-width: 991px){
+  #work {
+    max-width: 400px;
+    margin: auto;
+  }
   .left-project-pic {
     border-bottom-left-radius: 0px;
   }
