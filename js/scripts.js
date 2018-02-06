@@ -3,16 +3,15 @@ $(document).ready(function() {
   // WORK SECTION
   for(let i = 0; i < works.length; i++) {
     $('#work').append(
-      `<div class='row'>
+      `
+      <div class='row'>
       <div class='text-center'>
       <div class='panel'>
       <div class='panel-heading'>
       <h3 class='panel-title' data-toggle='tooltip' data-placement='top' title='${works[i].hoverDescription}'>${works[i].title}</h3>
-      </div>
-      <div class='panel-body'>
       ${works[i].techUsed} -
       <a href=${works[i].githubLink} target='_blank' data-toggle='tooltip' data-placement='top' title='Checkout Github'>
-      <i class='fa fa-github fa-lg' aria-hidden='true'></i>
+      <i class='fa fa-github fa-lg tech-used-octocat-icon' aria-hidden='true'></i>
       </a>
       </div>
       </div>
@@ -29,9 +28,10 @@ $(document).ready(function() {
       </div>
       </div>
       </a>
-      <br />`
+      <br />
+      `
     );
-    $('#work').append(i + 1 < works.length ? `<hr />` : ``); // appends <hr /> to all but last project
+    $('#work').append(i + 1 < works.length ? `<br />` : ``); // appends <hr /> to all but last project
   }
   // turns portfolio picture reddish and shows the invitation to click
   $('.portfolio-piece-picture').mouseenter(function() {
@@ -60,6 +60,13 @@ $(document).ready(function() {
   // GET CURRENT YEAR
   $('#current-year').html(new Date().getFullYear());
   // END GET CURRENT YEAR
+
+
+  // MAKE HAMBURGER ICON MENU DISAPPEAR UPON CLICKING AN ITEM
+  $('.navbar-collapse ul li a').click(function(){
+    $('.navbar-toggle:visible').click();
+  });
+  // END MAKE HAMBURGER ICON MENU DISAPPEAR UPON CLICKING AN ITEM
 
 
 });

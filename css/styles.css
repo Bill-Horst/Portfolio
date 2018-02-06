@@ -6,12 +6,12 @@ html, body {
 }
 
 body {
-  color: #004d00;
+  color: #003308;
   position: relative;
   background-attachment: fixed;
   background-image: url('../img/background.jpg');
+  opacity: .9;
 }
-
 
 
 /* NAVIGATION BAR */
@@ -64,9 +64,15 @@ body {
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
   .name-header {
     font-size: 2.3em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .name-header > span {
+    display: block;
   }
 }
 
@@ -210,12 +216,20 @@ body {
 
 
 /* PORTFOLIO WORK */
+#work .portfolio-piece-picture {
+  width: fit-content;
+  box-shadow: 3px 3px #8e6363;
+}
+
 #portfolio-section .panel {
   border: 0px;
+  box-shadow: 3px 3px #8e6363;
+  border-bottom-right-radius: 0px;
 }
+
 #portfolio-section .panel, #portfolio-section .panel-heading {
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   background-color: #ffffd9;
 }
 
@@ -231,25 +245,27 @@ body {
 .panel-heading {
   font-weight: 400;
   text-transform:inherit;
+  opacity: .9;
 }
 
-.panel-body {
-  font-weight: 600;
+.tech-used-octocat-icon {
+  color: #fff0b3;
 }
 
 .portfolio-piece-picture {
   position: relative;
-  filter: grayscale(40%);
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  /* filter: grayscale(40%); */
+  opacity: .9;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .left-project-pic {
-  border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 5px;
 }
 
 .right-project-pic {
-  border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 5px;
 }
 
 @media screen and (max-width: 991px){
@@ -261,8 +277,8 @@ body {
     border-bottom-left-radius: 0px;
   }
   .right-project-pic {
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 }
 
@@ -342,6 +358,10 @@ body {
 
 #contact-section {
   padding-bottom: 100px;
+}
+
+.mailto-link {
+  color: inherit;
 }
 /* END CONTACT */
 
@@ -446,11 +466,11 @@ a {
 }
 
 hr {
-  border-color: #600;
+  border-color: #330003;
 }
 
 .dark-red {
-  color: #600;
+  color: #330003;
 }
 /* END TOPOGRAPHY */
 
