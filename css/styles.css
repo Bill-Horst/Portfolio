@@ -48,7 +48,7 @@ body {
 .name-header {
   color: #f2e7ac;
   position: absolute;
-  top: 45px;
+  top: 75px;
   z-index: 1;
   background-color: #4f7d5e;
   width: 100%;
@@ -218,24 +218,26 @@ body {
 /* PORTFOLIO WORK */
 #work .portfolio-piece-picture {
   width: fit-content;
-  box-shadow: 3px 3px #8e6363;
+  box-shadow: 3px 3px 3px #8e6363;
 }
 
 #portfolio-section .panel {
   border: 0px;
-  box-shadow: 3px 3px #8e6363;
+  box-shadow: 3px 3px 3px #8e6363;
   border-bottom-right-radius: 0px;
+  background-color: none;
+  opacity: .85;
 }
 
 #portfolio-section .panel, #portfolio-section .panel-heading {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  background-color: #ffffd9;
+  background-color: #600;
 }
 
 #portfolio-section .panel-heading {
   color: #fff0b3;
-  background-color: #600;
+  background-color: inherit;
 }
 
 #portfolio-section .row {
