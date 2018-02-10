@@ -5,28 +5,28 @@ $(document).ready(function() {
     $('#work').append(
       `
       <div class='row'>
-      <div class='text-center'>
-      <div class='panel'>
-      <div class='panel-heading'>
-      <h3 class='panel-title' data-toggle='tooltip' data-placement='top' title='${works[i].hoverDescription}'>${works[i].title}</h3>
-      ${works[i].techUsed} -
-      <a href=${works[i].githubLink} target='_blank' data-toggle='tooltip' data-placement='top' title='Checkout Github'>
-      <i class='fa fa-github fa-lg tech-used-octocat-icon' aria-hidden='true'></i>
-      </a>
-      </div>
-      </div>
-      </div>
+        <div class='text-center'>
+          <div class='panel'>
+            <div class='panel-heading'>
+              <h3 class='panel-title' data-toggle='tooltip' data-placement='top' title='${works[i].hoverDescription}'>${works[i].title}</h3>
+              ${works[i].techUsed} -
+              <a href=${works[i].githubLink} target='_blank' data-toggle='tooltip' data-placement='top' title='Checkout Github'>
+                <i class='fa fa-github fa-lg tech-used-octocat-icon' aria-hidden='true'></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <a href=${works[i].href} target='_blank'>
-      <div class='row portfolio-piece-picture'>
-      <h1 class='site-invitation'>GO TO LIVE SITE</h1>
-      <div class='col-md-6 no-extra'>
-      <img class='img-responsive left-project-pic' src=${works[i].frontPageImage}>
-      </div>
-      <div class='col-md-6 no-extra'>
-      <img class='img-responsive right-project-pic' src=${works[i].featureImage}>
-      </div>
-      </div>
+        <div class='row portfolio-piece-picture'>
+          <h1 class='site-invitation'>GO TO LIVE SITE</h1>
+          <div class='col-md-6 no-extra'>
+            <img class='img-responsive left-project-pic' src=${works[i].frontPageImage}>
+          </div>
+          <div class='col-md-6 no-extra'>
+            <img class='img-responsive right-project-pic' src=${works[i].featureImage}>
+          </div>
+        </div>
       </a>
       <br />
       `

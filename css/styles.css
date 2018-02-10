@@ -217,8 +217,12 @@ body {
 
 /* PORTFOLIO WORK */
 #work .portfolio-piece-picture {
-  width: fit-content;
   box-shadow: 3px 3px 3px #8e6363;
+}
+
+#work .row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #portfolio-section .panel {
