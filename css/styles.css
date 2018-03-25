@@ -342,6 +342,8 @@ body {
 /* CONTACT */
 #contact-body {
   padding-bottom: 50px;
+  max-width: 500px;
+  margin: auto;
 }
 
 #contact-body .contact-info p {
@@ -368,6 +370,32 @@ body {
 
 .mailto-link {
   color: inherit;
+}
+
+#contact-body input, #contact-body textarea {
+  background-attachment: fixed;
+  font-family: fantasy;
+  background-image: url('../img/paper.png');
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  webkit-box-shadow: none;
+}
+
+#contact-body button {
+  border-radius: 50%;
+  border-color: #850000;
+  color: #850000;
+  font-family: fantasy;
+  background-color: wheat;
+  font-size: 1.3em;
+  padding: 0px;
+  width: 55px;
+  height: 50px;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  font-weight: bolder;
+  /* cursor: url('image url to custom "pen" svg'), auto; */
 }
 /* END CONTACT */
 

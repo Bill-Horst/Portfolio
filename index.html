@@ -169,21 +169,28 @@
         <div class='header'>
           <h1>Contact</h1>
         </div>
-        <div class='row'>
-          <div class='text-center contact-info'>
-            <div class='contact-email'>
-              <a class='mailto-link' href='mailto:bill@billhorst.com'><span class='fa fa-envelope fa-2x'></span></a>
-              <p>bill@billhorst.com</p>
-            </div>
-            <div class='address'>
-              <span class='fa fa-id-card fa-2x'></span>
-              <p>Fort Collins, Colorado, USA</p>
-            </div>
+        <form action="https://formspree.io/bill@billhorst.com" method="POST">
+          <div class="form-group">
+            <label for="userName">Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Your name" name="name">
           </div>
-        </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="youremail@email.com" name="_replyto">
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Message</label>
+            <textarea rows="1" class="form-control" id="formMessage" placeholder="Hello!" name="message"></textarea>
+          </div>
+
+          <input type="hidden" name="_next" value="//billhorst.com/index.html" />
+
+          <button type="submit" class="btn btn-default">Send</button>
+        </form>
       </div>
     </div>
   </div>
+
   <!-- END Contact Section -->
 
 
