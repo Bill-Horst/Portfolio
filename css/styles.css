@@ -400,6 +400,43 @@ body {
 /* END CONTACT */
 
 
+/* MESSAGE RECEIVED PAGE */
+.message-received-page, .message-received-page a {
+  text-align: center;
+  color: #600;
+}
+
+.message-received-page {
+  /* padding-top: 50px; */
+}
+
+.message-received-message {
+  position: absolute;
+  left: 40%;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 790px){
+  .message-received-message {
+    position: static;
+    text-align: center;
+  }
+  .bird-pic img {
+    border-top-right-radius: 50px;
+  }
+}
+
+.bird-pic {
+  padding: 0px;
+}
+
+.bird-pic img {
+  width: 100%;
+  border-bottom-right-radius: 50px;
+}
+/* END MESAGE RECEIVED PAGE */
+
+
 /* FOOTER */
 footer {
   background-color: #600;
