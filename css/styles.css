@@ -76,6 +76,27 @@ body {
   }
 }
 
+
+.description-header {
+  color: #f2e7ac;
+  position: absolute;
+  top: 450px;
+  z-index: 1;
+  background-color: #4f7d5e;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  opacity: .95;
+  transition: 0ms;
+}
+
+@media screen and (max-width: 975px){
+  .description-header {
+    font-size: 1.5em;
+  }
+}
+
+
 .header-social-media-links {
   text-align: center;
 }
