@@ -4,7 +4,7 @@ let works = [
   {
     id: 'chamisama-tea',
     title: 'Chamisama - Japanese Tea Ecommerce App',
-    hoverDescription: 'This is a Rails ecommerce app for selling Japanese and Chinese tea.',
+    hoverDescription: 'This is a Rails ecommerce app for selling Japanese and Chinese tea. People around the world like healthy, good-tasting Japanese tea and they can get it from this ecommerce store.',
     techUsed: 'HTML / CSS / JavaScript / jQuery / Ruby / Rails 5 / Stripe',
     frontPageImage: 'img/project_photos/chamisama_front.jpg',
     featureImage: 'img/project_photos/chamisama_features.jpg',
@@ -14,7 +14,7 @@ let works = [
   {
     id: 'hello-sensei',
     title: 'Hello Sensei - ESL / EFL Teacher Applicaion',
-    hoverDescription: 'This is an AngularJS front / Rails 5 back API application for teachers.',
+    hoverDescription: 'This is an AngularJS front / Rails 5 back API application for EFL teachers abroad. It can be hard to come up with a lesson idea spur of the moment, but this is an app that teachers can use to share and get ideas.',
     techUsed: 'HTML / CSS / JavaScript / AngularJS / TinyMCE / Ruby / Rails 5',
     frontPageImage: 'img/project_photos/hello_front.jpg',
     featureImage: 'img/project_photos/hello_features.jpg',

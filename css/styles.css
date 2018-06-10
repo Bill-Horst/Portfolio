@@ -36,6 +36,22 @@ body {
   width: 100%;
   padding: 10px;
 }
+
+.ribbon {
+  position: fixed;
+  bottom: 132px;
+  left: 0px;
+  background-color: #600;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+
+.ribbon a {
+  color: white;
+  font-family: "Oswald";
+  font-size: 20px;
+}
 /* END NAVIGATION BAR */
 
 
@@ -78,21 +94,28 @@ body {
 
 
 .description-header {
-  color: #f2e7ac;
+  color: #600;
   position: absolute;
-  top: 450px;
+  top: 420px;
   z-index: 1;
-  background-color: #4f7d5e;
-  width: 100%;
-  font-size: 2em;
+  margin-left: 15%;
+  /* background-color: rgba(213, 203, 129, 1); */
+  background-image: url("../img/cloud-background.jpg");
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-family: "Oswald";
   text-align: center;
-  opacity: .95;
-  transition: 0ms;
 }
 
 @media screen and (max-width: 975px){
   .description-header {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    margin-left: 0px;
+    width: 100%;
+    top: 350px;
   }
 }
 
@@ -151,8 +174,23 @@ body {
 
 
 /* ABOUT */
+#about-section {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .about-header {
   margin-bottom: 0px !important;
+}
+
+#skills-icons img {
+  margin: 10px;
+  height: 86px;
+  width: 62px;
+}
+
+.skills-image-div {
+  text-align: center;
 }
 
 .skills {

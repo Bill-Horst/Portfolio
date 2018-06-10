@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+  // SKILL SECTION
+  for(let i = 0; i < skills.length; i++) {
+    let el = $('#skills-icons');
+    if (i === 0) {
+      el.append(`<div class='row skills-row'>`)
+    }
+    if (i % 6 === 0 && i !== 0) {
+      el.append(`</div><div class='row skills-row>'`)
+    }
+    el.append(
+      `
+      <div class='skills-image-div col-md-2 col-xs-4' data-toggle='tooltip' data-placement='top' title='${skills[i].techName}: ${skills[i].experienceDuration}'>
+        <img src='${skills[i].imageUrl}'></img>
+      </div>
+      `
+    )
+    if (i === skills.length) {
+      el.append(`</div>`)
+    }
+  }
+
   // WORK SECTION
   for(let i = 0; i < works.length; i++) {
     $('#work').append(
@@ -8,7 +29,7 @@ $(document).ready(function() {
         <div class='text-center'>
           <div class='panel'>
             <div class='panel-heading'>
-              <h3 class='panel-title' data-toggle='tooltip' data-placement='top' title='${works[i].hoverDescription}'>${works[i].title}</h3>
+              <h3 class='panel-title' data-toggle='tooltip' data-placement='right' title='${works[i].hoverDescription}'>${works[i].title}</h3>
               ${works[i].techUsed} -
               <a href=${works[i].githubLink} target='_blank' data-toggle='tooltip' data-placement='top' title='Checkout Github'>
                 <i class='fa fa-github fa-lg tech-used-octocat-icon' aria-hidden='true'></i>
@@ -67,6 +88,12 @@ $(document).ready(function() {
     $('.navbar-toggle:visible').click();
   });
   // END MAKE HAMBURGER ICON MENU DISAPPEAR UPON CLICKING AN ITEM
+
+  // LOAD THE PARTIALS INTO THE PAGE
+  $('#certifications_partial').load('../partials/certifications_partial.html');
+  $('#contact_partial').load('../partials/contact_partial.html');
+  $('#footer_partial').load('../partials/footer_partial.html');
+  // END LOAD THE PARTIALS INTO THE PAGE
 
 
 });
