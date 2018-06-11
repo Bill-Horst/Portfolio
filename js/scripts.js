@@ -11,7 +11,7 @@ $(document).ready(function() {
     }
     el.append(
       `
-      <div class='skills-image-div col-md-2 col-xs-4' data-toggle='tooltip' data-placement='top' title='${skills[i].techName}: ${skills[i].experienceDuration}'>
+      <div class='skills-image-div col-md-2 col-xs-4' data-toggle='tooltip' data-placement='top' title='${skills[i].techName} - ${skills[i].experienceDuration}'>
         <img src='${skills[i].imageUrl}'></img>
       </div>
       `
@@ -90,9 +90,10 @@ $(document).ready(function() {
   // END MAKE HAMBURGER ICON MENU DISAPPEAR UPON CLICKING AN ITEM
 
   // LOAD THE PARTIALS INTO THE PAGE
-  $('#certifications_partial').load('../partials/certifications_partial.html');
-  $('#contact_partial').load('../partials/contact_partial.html');
-  $('#footer_partial').load('../partials/footer_partial.html');
+  $('#accordion_section').load('../partials/accordion_partial.html');
+  $('#certifications_section').load('../partials/certifications_partial.html');
+  $('#contact_section').load('../partials/contact_partial.html');
+  $('#footer_section').load('../partials/footer_partial.html');
   // END LOAD THE PARTIALS INTO THE PAGE
 
 

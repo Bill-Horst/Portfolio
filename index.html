@@ -19,7 +19,7 @@
   <title>Bill Horst Software Engineer</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src='js/work.js'></script>
-  <script src='js/skill_icons.js'></script>
+  <script src='js/skill_list.js'></script>
   <link rel="icon" href="favicon.ico">
 
   <!-- Bootstrap core CSS -->
@@ -119,12 +119,18 @@
         <div class='column col-md-8 col-lg-10'>
           <div class='container-fluid'>
             <div id='skills-icons'>
-              <!-- skill icons from scripts.js and skill_icons.js -->
+              <!-- skill icons from scripts.js and skill_list.js -->
             </div>
           </div>
         </div>
 
       </div>
+
+      <!-- FAQ Accordion -->
+      <div class='about-accordion'>
+        <div id='accordion_section'><!-- faq accordion --></div>
+      </div>
+      <!-- END FAQ Accordion -->
 
     </div><!-- end container -->
   </div>
@@ -152,7 +158,7 @@
 
 
   <!-- Certifications Section -->
-  <div id="certifications_partial"></div>
+  <div id="certifications_section"></div>
   <!-- END Certifications Section -->
 
   <!-- Bottom Break Section -->
@@ -160,11 +166,11 @@
   <!-- END Bottom Break Section -->
 
   <!-- Contact Section -->
-  <div id="contact_partial"></div>
+  <div id="contact_section"></div>
   <!-- END Contact Section -->
 
   <!-- Footer Section -->
-  <div id="footer_partial"></div>
+  <div id="footer_section"></div>
   <!-- END Footer Section -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -177,7 +183,7 @@
   <script src='js/scripts.js'></script>
 
   <!-- RESUME MODAL -->
-  <div class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-hidden='true' data-backdrop='static' data-keyboard='false'>
+  <div class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-hidden='true' data-keyboard='false'>
     <div class='modal-dialog modal-lg'>
       <div class='modal-content'>
         <div class='modal-header'>

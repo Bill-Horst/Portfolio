@@ -187,6 +187,8 @@ body {
   margin: 10px;
   height: 86px;
   width: 62px;
+  -webkit-filter: drop-shadow(5px 5px 5px #600), grayscale(30%);
+  filter: drop-shadow(4px 4px 8px #600) grayscale(30%);
 }
 
 .skills-image-div {
@@ -271,6 +273,30 @@ body {
 #about-section h3 {
   text-align: center;
 }
+
+.about-accordion {
+  margin: 50px;
+}
+
+#accordion_section .panel, #accordion_section .panel-heading {
+  border-color: #600;
+  color: white;
+    background-color: rgba(0,0,0,0);
+}
+
+#accordion_section .panel-heading {
+  background-color: #600;
+  color: #fff5cc;
+}
+
+#accordion_section .panel-body {
+  background-color: rgba(0,0,0,0);
+  color: #600;
+  font-family: "Oswald";
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
 /* END ABOUT */
 
 
