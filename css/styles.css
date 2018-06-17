@@ -460,11 +460,17 @@ body {
 #contact-body input, #contact-body textarea {
   background-attachment: fixed;
   font-family: fantasy;
+  letter-spacing: 2px;
   background-image: url('../img/paper.png');
   border: none;
   border-bottom: 1px solid black;
   box-shadow: none;
   webkit-box-shadow: none;
+}
+
+::placeholder {
+  color: #600 !important;
+  opacity: .8 !important;
 }
 
 #contact-body button {
