@@ -24,7 +24,7 @@ let works = [
   {
     id: 'ruby-blog',
     title: 'Blog Application',
-    hoverDescription: 'This is a sample blog application build on Rails 5.',
+    hoverDescription: 'This is a sample blog application built on Rails 5.',
     techUsed: 'HTML / CSS / JavaScript / jQuery / Ruby / Rails 5 / TinyMCE',
     frontPageImage: 'img/project_photos/blog_front.jpg',
     featureImage: 'img/project_photos/blog_features.jpg',
@@ -32,16 +32,3 @@ let works = [
     href: 'https://billsrubyblog.herokuapp.com/'
   }
 ];
-
-
-// OLD PLOT GENERATOR WORK CODE:
-// {
-//   id: 'plot-generator',
-//   title: 'Plot Generator',
-//   hoverDescription: 'This is a plot generator app that I built to learn AngularJS.',
-//   techUsed: 'HTML / CSS / JavaScript / AngularJS',
-//   frontPageImage: 'img/project_photos/plot_generator_front.jpg',
-//   featureImage: 'img/project_photos/plot_generator_features.jpg',
-//   githubLink: 'https://github.com/billhorst/PlotGenerator',
-//   href: 'http://billhorst.github.io/PlotGenerator/index.html'
-// },

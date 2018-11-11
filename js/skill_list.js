@@ -1,3 +1,4 @@
+// experience duration: first argument is date started, second argument is date ended
 let skills = [
   {
     techName: 'JavaScript',
@@ -22,7 +23,7 @@ let skills = [
   {
     techName: 'Angular 5',
     imageUrl: './img/skill_icons/angular5.png',
-    experienceDuration: calculateExperienceDuration(new Date(2018, 1, 1), new Date())
+    experienceDuration: calculateExperienceDuration(new Date(2018, 1, 1), new Date(2018, 7, 1))
   },
   {
     techName: 'Bootstrap',
