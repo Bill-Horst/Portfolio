@@ -116,14 +116,14 @@ const SKILLS = (function() {
       experienceDuration: calculateExperienceDuration(new Date(2014, 8, 1), new Date())
     },
     {
-      techName: 'AngularJS',
-      imageUrl: './img/skill_icons/angularjs.png',
-      experienceDuration: calculateExperienceDuration(new Date(2016, 7, 1), new Date(2018, 1, 1))
+      techName: 'Angular',
+      imageUrl: './img/skill_icons/angular.png',
+      experienceDuration: calculateExperienceDuration(new Date(2018, 1, 1), new Date())
     },
     {
-      techName: 'Angular 5',
-      imageUrl: './img/skill_icons/angular5.png',
-      experienceDuration: calculateExperienceDuration(new Date(2018, 1, 1), new Date(2018, 7, 1))
+      techName: 'Java',
+      imageUrl: './img/skill_icons/java.png',
+      experienceDuration: calculateExperienceDuration(new Date(2015, 5, 1), new Date())
     },
     {
       techName: 'Bootstrap',
@@ -136,20 +136,20 @@ const SKILLS = (function() {
       experienceDuration: calculateExperienceDuration(new Date(2017, 3, 1), new Date())
     },
     {
-      techName: 'Ruby',
-      imageUrl: './img/skill_icons/ruby.png',
-      experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
+      techName: 'AngularJS',
+      imageUrl: './img/skill_icons/angularjs.png',
+      experienceDuration: calculateExperienceDuration(new Date(2016, 7, 1), new Date(2018, 1, 1))
     },
-    {
-      techName: 'Ruby on Rails',
-      imageUrl: './img/skill_icons/rails.png',
-      experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
-    },
-    {
-      techName: 'Java',
-      imageUrl: './img/skill_icons/java.png',
-      experienceDuration: calculateExperienceDuration(new Date(2015, 5, 1), new Date())
-    },
+    // {
+    //   techName: 'Ruby',
+    //   imageUrl: './img/skill_icons/ruby.png',
+    //   experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
+    // },
+    // {
+    //   techName: 'Ruby on Rails',
+    //   imageUrl: './img/skill_icons/rails.png',
+    //   experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
+    // },
     {
       techName: 'AWS',
       imageUrl: './img/skill_icons/aws.png',
@@ -165,16 +165,16 @@ const SKILLS = (function() {
       imageUrl: './img/skill_icons/svn.png',
       experienceDuration: calculateExperienceDuration(new Date(2017, 1, 1), new Date())
     },
-    {
-      techName: 'JUnit',
-      imageUrl: './img/skill_icons/junit.png',
-      experienceDuration: calculateExperienceDuration(new Date(2015, 7, 1), new Date())
-    },
-    {
-      techName: 'RSpec',
-      imageUrl: './img/skill_icons/rspec.png',
-      experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
-    }
+    // {
+    //   techName: 'JUnit',
+    //   imageUrl: './img/skill_icons/junit.png',
+    //   experienceDuration: calculateExperienceDuration(new Date(2015, 7, 1), new Date())
+    // },
+    // {
+    //   techName: 'RSpec',
+    //   imageUrl: './img/skill_icons/rspec.png',
+    //   experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
+    // }
   ];
 
   function calculateExperienceDuration(startDate, endDate) {
