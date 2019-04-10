@@ -94,13 +94,6 @@ const MAIN = (function() {
     });
     // END MAKE HAMBURGER ICON MENU DISAPPEAR UPON CLICKING AN ITEM
 
-    // LOAD THE PARTIALS INTO THE PAGE
-    $('#accordion_section').load('../partials/accordion_partial.html');
-    $('#certifications_section').load('../partials/certifications_partial.html');
-    $('#contact_section').load('../partials/contact_partial.html');
-    $('#footer_section').load('../partials/footer_partial.html');
-    // END LOAD THE PARTIALS INTO THE PAGE
-
   });
 
 })();

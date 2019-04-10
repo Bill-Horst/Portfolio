@@ -126,74 +126,178 @@
 
       <!-- FAQ Accordion -->
       <div class='about-accordion'>
-        <div id='accordion_section'><!-- faq accordion --></div>
-      </div>
-      <!-- END FAQ Accordion -->
+        <div id='accordion_section'>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span><i id="" class="fa fa-plus"></i></span> MY CURRENT POSITION
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  I currently work as a full stack engineer for a software consulting company. Over the past three years, I've worked with two clients. On the first client, I worked on a small scrum team documenting and correcting defects and maintaining the back end of multiple legacy systems. On my current client, I work on a larger scrum team developing new features with cutting-edge technology for the front end of a large SaaS application.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span><i id="" class="fa fa-plus"></i></span> ABOUT ME
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 
-    </div><!-- end container -->
-  </div>
-  <!-- END About Section -->
+                <div class="panel-body">
+                  I enjoy studying foreign languages and travelling. I lived for six years in Japan where I taught English and got good at Japanese - to the point I was able to work as a translator for various businesses and a local government contractor. I still like foreign languages, but about four years ago, they took a back seat to my new interest: web development.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span><i id="" class="fa fa-plus"></i></span> EDUCATION
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  I graduated with a BA from CU Boulder. In 2015, I finished a Java boot camp in Ohio and got a web developer job a week later. Since then, I've attended multiple boot camps just for fun, including an "AngularJS" course, a "Web Design" course, and "Full Stack Web Development with Ruby on Rails" Course. I also push myself to study for certifications, not because I want that piece of paper, but because studying for certifications is a good window into what's important to know about other parts of the tech field.
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <!-- END FAQ Accordion -->
+
+      </div><!-- end container -->
+    </div>
+    <!-- END About Section -->
 
 
-  <!-- Top break section -->
-  <div class='break-section break-1 break-body left-cone'><!-- inserted from parallax_adjustments.js --></div>
-  <!-- END Top break section -->
+    <!-- Top break section -->
+    <div class='break-section break-1 break-body left-cone'><!-- inserted from parallax_adjustments.js --></div>
+    <!-- END Top break section -->
 
 
-  <!-- Portfolio Work -->
-  <div id='portfolio-section'>
-    <div class='container anchor'>
-      <div class='header'>
-        <h1>Portfolio</h1>
-        <br />
-        <div id='work'>
-          <!-- all portfolio pieces from "work.js" -->
+    <!-- Portfolio Work -->
+    <div id='portfolio-section'>
+      <div class='container anchor'>
+        <div class='header'>
+          <h1>Portfolio</h1>
+          <br />
+          <div id='work'>
+            <!-- all portfolio pieces from "work.js" -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END Portfolio Work -->
+    <!-- END Portfolio Work -->
 
 
-  <!-- Certifications Section -->
-  <div id="certifications_section"></div>
-  <!-- END Certifications Section -->
-
-  <!-- Bottom Break Section -->
-  <div class='break-section break-2 break-body right-cone'><!-- inserted from parallax_adjustments.js --></div>
-  <!-- END Bottom Break Section -->
-
-  <!-- Contact Section -->
-  <div id="contact_section"></div>
-  <!-- END Contact Section -->
-
-  <!-- Footer Section -->
-  <div id="footer_section"></div>
-  <!-- END Footer Section -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script src='js/jquery-migrate-3.0.0.min.js'></script>
-  <script src='js/jquery.stellar.min.js'></script>
-  <script src='js/scripts.js'></script>
-
-  <!-- RESUME MODAL -->
-  <div class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-hidden='true' data-keyboard='false'>
-    <div class='modal-dialog modal-lg'>
-      <div class='modal-content'>
-        <div class='modal-header'>
-          <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
-          <h4 class='modal-title' id='myModalLabel'>Resume</h4>
-        </div>
-        <div class='modal-body'>
-          <!-- <embed id='resume-embed' src='Resume.pdf' /> -->
-          <object data='Resume.pdf' id='resume-embed' type='application/pdf'>
-            <p>Looks like your browser doesn't support this!<a href='Resume.pdf' download> Click here to download my resume.</a></p>
-          </object>
+    <!-- Certifications Section -->
+    <div id="certifications_section">
+      <div id='certification-section'>
+        <div class='container anchor'>
+          <div class='header'>
+            <h1>Certifications</h1>
+            <br />
+          </div>
+          <div class='row'>
+            <div class='col-xs-12 col-md-4'><a href='https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-808'><img class='img-responsive cert-badge' src='img/certifications/Java_8_Cert.gif' id='java-cert-badge' alt='Java Badge'></a></div>
+            <div class='col-xs-12 col-md-4'><a href='https://aws.amazon.com/certification/certified-developer-associate/'><img class='img-responsive cert-badge' src='img/certifications/AWS_Cert.png' id='aws-cert-badge' alt='AWS Badge'></a></div>
+            <div class='col-xs-12 col-md-4'><a href='https://www.microsoft.com/en-us/learning/exam-70-480.aspx'><img class='img-responsive cert-badge' src='img/certifications/MS_70-480_Cert.png' id='ms-cert-badge' alt='Microsoft Badge'></a></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END RESUME MODAL -->
-</body>
-</html>
+    <!-- END Certifications Section -->
+
+    <!-- Bottom Break Section -->
+    <div class='break-section break-2 break-body right-cone'><!-- inserted from parallax_adjustments.js --></div>
+    <!-- END Bottom Break Section -->
+
+    <!-- Contact Section -->
+    <div id="contact_section">
+      <div class='container-fluid anchor' id='contact-section'>
+        <div id='contact-body'>
+          <div class='info container'>
+            <div class='header'>
+              <h1>Contact</h1>
+            </div>
+            <form action="https://formspree.io/bill@billhorst.com" method="POST">
+              <div class="form-group">
+                <label for="userName">Name*</label>
+                <input type="text" class="form-control" id="userName" placeholder="Your name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address*</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="youremail@email.com" name="_replyto" required>
+              </div>
+              <div class="form-group">
+                <label for="formMessage">Message*</label>
+                <textarea rows="1" class="form-control" id="formMessage" placeholder="Hello!" name="message" required></textarea>
+              </div>
+
+              <input type="hidden" name="_next" value="//billhorst.com/message_received.html" />
+
+              <button type="submit" class="btn btn-default">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <div id="footer_section">
+      <footer>
+        <div class='container'>
+          <div class='row footer-row'>
+            <div class='social-media-links'>
+              <div class='links'>
+                <a href='https://github.com/Bill-Horst'><i class='fa fa-github fa-3x' data-toggle='tooltip' data-placement='top' title='Github'></i></a>
+                <a href='https://www.linkedin.com/in/horstbill'><i class='fa fa-linkedin-square fa-3x' data-toggle='tooltip' data-placement='top' title='LinkedIn'></i></a>
+                <a class='resume-button' data-toggle='modal' data-target='.bs-example-modal-sm'><i class='fa fa-list-alt fa-3x' data-toggle='tooltip' data-placement='top' title='Resume'></i></a>
+              </div>
+            </div>
+            <div class='copyright-info'>
+              <span>&copy; Bill Horst <span id='current-year'></span></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- END Footer Section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src='js/jquery-migrate-3.0.0.min.js'></script>
+    <script src='js/jquery.stellar.min.js'></script>
+    <script src='js/scripts.js'></script>
+
+    <!-- RESUME MODAL -->
+    <div class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-hidden='true' data-keyboard='false'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title' id='myModalLabel'>Resume</h4>
+          </div>
+          <div class='modal-body'>
+            <!-- <embed id='resume-embed' src='Resume.pdf' /> -->
+            <object data='Resume.pdf' id='resume-embed' type='application/pdf'>
+              <p>Looks like your browser doesn't support this!<a href='Resume.pdf' download> Click here to download my resume.</a></p>
+            </object>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END RESUME MODAL -->
+  </body>
+  </html>
