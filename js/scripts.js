@@ -14,13 +14,10 @@ const MAIN = (function() {
       if (i === 0) {
         el.append(`<div class='row skills-row'>`)
       }
-      if (i % 6 === 0 && i !== 0) {
-        el.append(`</div><div class='row skills-row>'`)
-      }
       el.append(
         `
         <div class='skills-image-div col-md-2 col-xs-4' data-toggle='tooltip' data-placement='top' title='${skills[i].techName} - ${skills[i].experienceDuration}'>
-        <img src='${skills[i].imageUrl}'></img>
+        <div class="skills-image ${skills[i].spriteImage}"></div>
         </div>
         `
       )
@@ -102,79 +99,59 @@ const SKILLS = (function() {
   let skills = [
     {
       techName: 'JavaScript',
-      imageUrl: './img/skill_icons/js.png',
+      spriteImage: 'bg-js',
       experienceDuration: calculateExperienceDuration(new Date(2014, 8, 1), new Date())
     },
     {
       techName: 'HTML5',
-      imageUrl: './img/skill_icons/html5.png',
+      spriteImage: 'bg-html5',
       experienceDuration: calculateExperienceDuration(new Date(2014, 8, 1), new Date())
     },
     {
       techName: 'CSS',
-      imageUrl: './img/skill_icons/css3.png',
+      spriteImage: 'bg-css3',
       experienceDuration: calculateExperienceDuration(new Date(2014, 8, 1), new Date())
     },
     {
       techName: 'Angular',
-      imageUrl: './img/skill_icons/angular.png',
+      spriteImage: 'bg-angular',
       experienceDuration: calculateExperienceDuration(new Date(2018, 1, 1), new Date())
     },
     {
       techName: 'Java',
-      imageUrl: './img/skill_icons/java.png',
+      spriteImage: 'bg-java',
       experienceDuration: calculateExperienceDuration(new Date(2015, 5, 1), new Date())
     },
     {
       techName: 'Bootstrap',
-      imageUrl: './img/skill_icons/bootstrap.png',
+      spriteImage: 'bg-bootstrap',
       experienceDuration: calculateExperienceDuration(new Date(2014, 10, 1), new Date())
     },
     {
       techName: 'SASS',
-      imageUrl: './img/skill_icons/sass.png',
+      spriteImage: 'bg-sass',
       experienceDuration: calculateExperienceDuration(new Date(2017, 3, 1), new Date())
     },
     {
       techName: 'AngularJS',
-      imageUrl: './img/skill_icons/angularjs.png',
+      spriteImage: 'bg-angularjs',
       experienceDuration: calculateExperienceDuration(new Date(2016, 7, 1), new Date(2018, 1, 1))
     },
-    // {
-    //   techName: 'Ruby',
-    //   imageUrl: './img/skill_icons/ruby.png',
-    //   experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
-    // },
-    // {
-    //   techName: 'Ruby on Rails',
-    //   imageUrl: './img/skill_icons/rails.png',
-    //   experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
-    // },
     {
       techName: 'AWS',
-      imageUrl: './img/skill_icons/aws.png',
+      spriteImage: 'bg-aws',
       experienceDuration: calculateExperienceDuration(new Date(2017, 0, 1), new Date())
     },
     {
       techName: 'Git',
-      imageUrl: './img/skill_icons/git.png',
+      spriteImage: 'bg-git',
       experienceDuration: calculateExperienceDuration(new Date(2015, 5, 1), new Date())
     },
     {
       techName: 'SVN',
-      imageUrl: './img/skill_icons/svn.png',
+      spriteImage: 'bg-svn',
       experienceDuration: calculateExperienceDuration(new Date(2017, 1, 1), new Date())
-    },
-    // {
-    //   techName: 'JUnit',
-    //   imageUrl: './img/skill_icons/junit.png',
-    //   experienceDuration: calculateExperienceDuration(new Date(2015, 7, 1), new Date())
-    // },
-    // {
-    //   techName: 'RSpec',
-    //   imageUrl: './img/skill_icons/rspec.png',
-    //   experienceDuration: calculateExperienceDuration(new Date(2017, 9, 1), new Date())
-    // }
+    }
   ];
 
   function calculateExperienceDuration(startDate, endDate) {

@@ -183,16 +183,15 @@ body {
   margin-bottom: 0px !important;
 }
 
-#skills-icons img {
-  margin: 10px;
-  height: 86px;
-  width: 62px;
-  -webkit-filter: drop-shadow(5px 5px 5px #600), grayscale(30%);
-  filter: drop-shadow(4px 4px 8px #600) grayscale(30%);
-}
-
 .skills-image-div {
   text-align: center;
+  height: 156px;
+}
+
+.skills-image {
+  margin: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #600), grayscale(30%);
+  filter: drop-shadow(4px 4px 8px #600) grayscale(20%);
 }
 
 .skills {
@@ -651,3 +650,76 @@ hr {
   padding-right: 0px;
 }
 /* END BOOTSTRAP CSS OVERRIDE */
+
+
+/* SPRITES */
+.bg-angular {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -136px;
+}
+
+.bg-angularjs {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -262px;
+}
+
+.bg-aws {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -388px;
+}
+
+.bg-bootstrap {
+    width: 60px; height: 76px;
+    background: url('skill_icon_sprites.png') -20px -20px;
+}
+
+.bg-css3 {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -514px;
+}
+
+.bg-git {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -640px;
+}
+
+.bg-html5 {
+    width: 62px; height: 90px;
+    background: url('skill_icon_sprites.png') -20px -1648px;
+}
+
+.bg-java {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -766px;
+}
+
+.bg-js {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -892px;
+}
+
+.bg-rails {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -1018px;
+}
+
+.bg-rspec {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -1144px;
+}
+
+.bg-ruby {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -1270px;
+}
+
+.bg-sass {
+    width: 62px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -1396px;
+}
+
+.bg-svn {
+    width: 63px; height: 86px;
+    background: url('skill_icon_sprites.png') -20px -1522px;
+}
+/* END SPRITES */
